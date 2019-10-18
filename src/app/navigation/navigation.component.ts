@@ -23,12 +23,12 @@ export class NavigationComponent implements OnInit {
     let scrollTop = window.setInterval(() => {
       let pos = window.pageYOffset;
       if (pos > 0) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo(0, pos - 20);;
       } else {
         window.clearInterval(scrollTop);
       }
     }, 16);
     // window.scroll(0, 0);
   }
-
+  // ({ top: 0, behavior: 'smooth' })
 }
