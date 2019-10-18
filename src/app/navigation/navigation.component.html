@@ -1,0 +1,16 @@
+<nav id="category" class="fixed-header" role="navigation">
+  <ul class="menu-primary">
+    <li id="menu-item-1" class="menu-item">
+      <a title="home" class="nav-item" [routerLink]="['']" [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{exact: true}" (click)="goTop()">Home</a>
+    </li>
+    <li id=" menu-item-2" class="menu-item">
+      <a title="about" class="nav-item" [routerLink]="['resume']" [routerLinkActive]="['active']"
+        (click)="goTop()">Resume</a>
+    </li>
+    <li id="menu-item-3" class="menu-item">
+      <a title="projects" class="nav-item" [routerLink]="['projects']" [routerLinkActive]="['active']"
+        (click)="goTop()">Projects</a>
+    </li>
+  </ul>
+</nav>

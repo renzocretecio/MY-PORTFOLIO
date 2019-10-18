@@ -1,0 +1,85 @@
+.project-title {
+  font-size: 1.25rem;
+  margin-top: 2em;
+}
+
+.carousel-container {
+  position: relative;
+
+  padding: 0;
+  margin: 2em 0 4em;
+  width: 100vw;
+  height: 15em;
+  left: calc(-50vw + 50%);
+  white-space: nowrap;
+}
+
+.slick-slide {
+  display: block;
+  opacity: 0.2;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.slick-center {
+  opacity: 1;
+}
+
+.gallery-arrows {
+  font-size: 1em;
+  position: absolute;
+  width: 3em;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: #DBE8D4;
+  background-color: transparent;
+  cursor: pointer;
+  top: 0;
+}
+
+.gallery-arrows i {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 2em;
+  height: 2em;
+  margin-top: -1em;
+  margin-left: -1em;
+  font-size: 2em;
+  text-align: center;
+  line-height: 2em;
+}
+
+.egovpay-prev,
+.hris-prev {
+  left: 0;
+}
+
+.egovpay-next,
+.hris-next {
+  right: 0;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .post-title {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  main .container {
+    position: relative;
+    width: 100%;
+  }
+
+  .post-title {
+    font-size: 3rem;
+  }
+
+  .post-content {
+    position: relative;
+    width: 100%;
+  }
+}

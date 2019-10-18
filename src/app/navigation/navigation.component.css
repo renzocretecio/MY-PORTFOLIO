@@ -1,0 +1,49 @@
+.fixed-header {
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 20rem;
+  background: #262228;
+  position: fixed;
+  text-align: center;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  font: normal 100%/1.5 'Titillium Web', sans-serif;
+}
+
+.fixed-header li {
+  display: inline-block;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.fixed-header ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.fixed-header a {
+  height: 3rem;
+  padding: 0 1rem;
+  line-height: 3rem;
+  display: block;
+}
+
+.menu-item a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #DBE8D4;
+}
+
+
+.menu-item a.active,
+.menu-item a:hover {
+  color: #e7dfdd;
+  border-bottom: 4px solid #e7dfdd;
+}
+
+@media only screen and (max-width: 30rem) {
+  #site-nav a {
+    padding: 0 0.5rem
+  }
+}

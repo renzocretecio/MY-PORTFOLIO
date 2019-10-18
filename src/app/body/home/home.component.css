@@ -1,0 +1,231 @@
+#site-header {
+  /* margin: 0; */
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 40rem;
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#site-header h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.home-title {
+  position: relative;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+
+.home-title h1 {
+  font-size: 3rem;
+  font-size: 9vw;
+  font-weight: 100;
+  line-height: 1;
+  margin: 0;
+}
+
+.home-title h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.125em;
+  margin: 1em 0 0;
+}
+
+.photo {
+  position: relative;
+  width: 18em;
+  height: 12em;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+.photo .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+
+#photo-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9em;
+  height: 9em;
+  margin-top: -4.5em;
+  margin-left: -4.5em;
+  overflow: hidden;
+  /* opacity: 0.75; */
+}
+
+#photo-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#photo-logo .front,
+#photo-logo .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2E3445;
+  border-radius: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#photo-logo .front {
+  transform: rotateY(0deg);
+}
+
+#photo-logo .back {
+  transform: rotateY(180deg);
+}
+
+#photo-logo.flipped .front {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+#photo-logo.flipped .back {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.intro-title {
+  margin-top: 0;
+  text-align: center;
+}
+
+.intro,
+.content {
+  text-align: justify;
+}
+
+.home-intro,
+.home-about {
+  width: 28rem;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+main h1 {
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+
+main h1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 16rem;
+  height: 4px;
+  margin-left: -8rem;
+  background-color: #525e65;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  #site-header {
+    height: 100vmin;
+  }
+
+  .home-intro,
+  .home-about {
+    max-width: 100%;
+  }
+
+  .home-title h1 {
+    font-size: 2.5rem;
+    font-size: 9vw;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #site-header {
+    height: 100vmin;
+  }
+
+  .home-title h1 {
+    font-size: 2.5rem;
+    font-size: 9vw;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #site-header {
+    height: 100vmin;
+  }
+
+  .home-title h1 {
+    font-size: 4.5rem;
+    font-size: 9vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  #site-header {
+    height: 100vmin;
+  }
+
+  .home-title h1 {
+    font-size: 6.75rem;
+
+  }
+}
+
+
+
+/* @media only screen and (max-width: 30rem) {
+
+  .home-intro,
+  .home-about {
+    width: 100%;
+  }
+
+  .home-title h1 {
+    font-size: 2.5rem;
+    font-size: 9vw;
+  }
+}
+
+@media only screen and (min-width: 45rem) {
+
+  .home-title h1 {
+    font-size: 4.5rem;
+    font-size: 9vw;
+  }
+}
+*/
+@media only screen and (min-width: 75rem) {
+
+  .home-title h1 {
+    font-size: 6.75rem;
+  }
+}

@@ -1,0 +1,54 @@
+<main role="main">
+  <div class="container">
+    <div class="post-header">
+      <h1 class="post-title">RESUME</h1>
+    </div>
+    <div class="post-content">
+      <h1 class="content-title">EDUCATION</h1>
+      <h2 style="text-align: center;">Pamantasan ng Lungsod ng Muntinlupa</h2>
+      <h3 class="school" style="text-align: center;">Bachelor of Science in Computer Science</h3>
+      <p style="text-align: center">First place in thesis presentation during 3rd Annual Researce Colloquium</p>
+      <p style="text-align: center">Best Thesis awardee</p>
+      <p style="text-align: center">2014-2018</p>
+      <h1 class="content-title">TECHNICAL TOOLBOX</h1>
+      <h2 style="text-align: center; margin-bottom: 1em;">Language I speak</h2>
+      <h2 class="tech-title" style="text-align: center;">Front-end</h2>
+      <div class="first-row contain">
+        <div class="tech-item" *ngFor="let tech of firstItems; index as i;">
+          <img src="{{tech}}">
+          <p style="text-transform: uppercase; margin: 0;">{{firstRow[i]}}</p>
+        </div>
+      </div>
+      <h2 class="tech-title" style="text-align: center;">Back-end</h2>
+      <div class="second-row contain">
+        <div class="tech-item" *ngFor="let tech of secondItems; index as i;">
+          <img src="{{tech}}">
+          <p style="text-transform: uppercase;margin: 0;">{{secondRow[i]}}</p>
+        </div>
+      </div>
+      <h2 class="tech-title" style="text-align: center;">Dev tools</h2>
+      <div class="third-row contain">
+        <div class="tech-item" *ngFor="let tech of thirdItems; index as i;">
+          <img src="{{tech}}">
+          <p style="text-transform: uppercase;margin: 0;">{{thirdRow[i]}}</p>
+        </div>
+      </div>
+      <h1 class="content-title">EMPLOYMENT</h1>
+      <h2 style="text-align: center;">BG The Printing Shop</h2>
+      <h3 style="text-align: center;">Graphic Designer</h3>
+      <p style="text-align: center;">T-shirt and Tarpaulin template design using Photoshop</p>
+      <p style="text-align: center;">Design printing using a heat press machine</p>
+      <p style="text-align: center">Jan - April 2018</p><br><br>
+      <h2 style="text-align: center;">Ziaplex Inc.</h2>
+      <h3 style="text-align: center;">Entry Level Java App Developer</h3>
+      <p style="text-align: center;">Web Development | Software Development</p>
+      <p style="text-align: center;">User Interface Design</p>
+      <p style="text-align: center">Sept 25, 2018 - Mar 25, 2019</p>
+      <p style="text-align: center"><a title="ziplex.biz" href="http://www.ziaplex.biz" target="_blank"
+          rel="noopener">View
+          website »</a></p>
+
+    </div>
+
+  </div>
+</main>

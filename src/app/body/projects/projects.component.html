@@ -1,0 +1,57 @@
+<main role="main">
+  <div class="container">
+    <div class="post-header">
+      <h1 class="post-title">PROJECTS</h1>
+    </div>
+    <div class="post-content">
+      <h2 class="project-title" style="text-align: center">Human Resource Infomation System</h2>
+      <div class="carousel-container">
+        <div class="glider-contain" style="padding: 0;">
+          <div class="glide">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="hrisConfig">
+              <div ngxSlickItem *ngFor="let slide of hrisImages" class="slide">
+
+                <img src="{{ slide }}" alt="" sizes="(max-width: 500px) 100vw, 500px" width="426" height="320">
+
+              </div>
+              <div ngxSlickItem *ngFor="let slide of hrisPortrait" class="slide">
+
+                <img src="{{ slide }}" alt="" sizes="(max-width: 261px) 100vw, 500px" width="261" height="320">
+
+              </div>
+            </ngx-slick-carousel>
+            <a class="gallery-arrows hris-prev" style="display: block;"><i class="fas fa-chevron-left"></i></a>
+            <a class="gallery-arrows hris-next" style="display: block;"><i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cupiditate
+        adipisci laboriosam quos
+        provident labore, temporibus architecto unde esse pariatur!</p>
+      <h2 class="project-title" style="text-align: center">eGovPay</h2>
+      <div class="carousel-container">
+        <div class="glider-contain" style="padding: 0;">
+          <div class="glide">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="egovpayConfig">
+              <div ngxSlickItem *ngFor="let slide of egovPayImages" class="slide">
+
+                <img src="{{ slide }}" alt="" sizes="(max-width: 500px) 100vw, 500px" width="426" height="320">
+
+              </div>
+              <div ngxSlickItem *ngFor="let slide of egovPayPortrait" class="slide">
+
+                <img src="{{ slide }}" alt="" sizes="(max-width: 261px) 100vw, 261px" width="261" height="320">
+
+              </div>
+            </ngx-slick-carousel>
+            <a class="gallery-arrows egovpay-prev" style="display: block;"><i class="fas fa-chevron-left"></i></a>
+            <a class="gallery-arrows egovpay-next" style="display: block;"><i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cupiditate
+        adipisci laboriosam quos
+        provident labore, temporibus architecto unde esse pariatur!</p>
+    </div>
+  </div>
+</main>
