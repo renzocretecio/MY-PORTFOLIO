@@ -8,8 +8,8 @@ import * as $ from 'jquery';
 })
 export class HomeComponent implements OnInit {
 
-  private homeH1: string = "RENZO R. CRETECIO";
-  private displayTextH1: string = "";
+  homeH1: string = "RENZO R. CRETECIO";
+  displayTextH1: string = "";
 
   typeWriter(that) {
     let totalLengthH1 = that.homeH1.length;
