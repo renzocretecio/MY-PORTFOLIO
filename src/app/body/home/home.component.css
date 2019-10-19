@@ -130,6 +130,10 @@
   margin-bottom: 2rem;
 }
 
+#about {
+  opacity: 0;
+}
+
 main h1::after {
   content: '';
   display: block;
