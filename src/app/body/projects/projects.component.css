@@ -62,6 +62,33 @@
   right: 0;
 }
 
+.text {
+  font-family: 'Nunito', sans-serif;
+  text-align: left;
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.text h3 {
+  position: relative;
+  font-size: 2em;
+}
+
+.text h3 hr {
+  display: block;
+  height: 1px;
+  width: 50%;
+  background-color: rgba(219, 232, 212, 0.5);
+  position: relative;
+  border: 0;
+  margin: .5em 0 1em;
+}
+
+.text .list ul {
+  list-style: circle;
+  padding: 0 1em;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .post-title {
     font-size: 4rem;
