@@ -37,13 +37,14 @@
 }
 
 #footer .email a {
+  font-family: "Nunito", sans-serif;
   text-decoration: none;
   cursor: pointer;
-  color: #DBE8D4;
+  color: #7289da;
 }
 
 #footer .email a:hover {
-  border-bottom: 2px solid #DBE8D4;
+  border-bottom: 2px solid #7289da;
 }
 
 #footer .links {
