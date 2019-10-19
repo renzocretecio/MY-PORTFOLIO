@@ -8,7 +8,7 @@
   position: fixed;
   text-align: center;
   box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-  font: normal 100%/1.5 'Titillium Web', sans-serif;
+  font: normal 100%/1 'Nunito', sans-serif;
 }
 
 .fixed-header li {

@@ -26,8 +26,6 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/assets/fonts/josefin-sans.css",
-              "src/assets/fonts/titillium-web.css",
               "src/assets/fonts/nunito.css",
               "src/assets/fonts/Blinker.css",
               "src/assets/fonts/quicksand.css",
