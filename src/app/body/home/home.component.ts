@@ -27,9 +27,10 @@ export class HomeComponent implements OnInit {
       var objectBottom = $("#about").offset().top + $("#about").outerHeight();
       if (windowBottom > 1000) {
         if ($("#about").css("opacity") == 0) { $("#about").fadeTo('slow', 1); }
-      } else {
-        if ($("#about").css("opacity") == 1) { $("#about").fadeTo('slow', 0); }
       }
+      // else {
+      //   if ($("#about").css("opacity") == 1) { $("#about").fadeTo('slow', 0); }
+      // }
     })
   }
 
