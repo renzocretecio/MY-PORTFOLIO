@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import * as $ from 'jquery';
 @Component({
   selector: 'app-navigation',
@@ -7,7 +8,7 @@ import * as $ from 'jquery';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService: Title ) { }
 
   ngOnInit() {
   }
@@ -19,7 +20,7 @@ export class NavigationComponent implements OnInit {
     })
   }
 
-  goTop() {
+  goTop(newTitle: string) {
     // let scrollTop = window.setInterval(() => {
     //   let pos = window.pageYOffset;
     //   if (pos > 0) {
@@ -28,6 +29,7 @@ export class NavigationComponent implements OnInit {
     //     window.clearInterval(scrollTop);
     //   }
     // }, 16);
+    this.titleService.setTitle( newTitle );
     window.scroll(0, 0);
   }
   // ({ top: 0, behavior: 'smooth' })
