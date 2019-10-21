@@ -5,12 +5,16 @@
         [routerLinkActiveOptions]="{exact: true}" (click)="goTop()">Home</a>
     </li>
     <li id=" menu-item-2" class="menu-item">
-      <a title="about" class="nav-item" [routerLink]="['resume']" [routerLinkActive]="['active']"
+      <a title="about" class="nav-item" [routerLink]="['/resume']" [routerLinkActive]="['active']"
         (click)="goTop()">Resume</a>
     </li>
     <li id="menu-item-3" class="menu-item">
-      <a title="projects" class="nav-item" [routerLink]="['projects']" [routerLinkActive]="['active']"
+      <a title="projects" class="nav-item" [routerLink]="['/projects']" [routerLinkActive]="['active']"
         (click)="goTop()">Projects</a>
     </li>
   </ul>
 </nav>
+<router-outlet></router-outlet>
+<footer>
+  <app-footer></app-footer>
+</footer>

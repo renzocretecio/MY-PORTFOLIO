@@ -1,0 +1,42 @@
+.main-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  max-width: 364px;
+  padding: 24px;
+  color: #0e0b16;
+  background-color: #DBE8D4;
+  border-radius: 1em;
+}
+
+
+.main-content h2 {
+  margin: 0;
+  font-size: 1.25em;
+  line-height: 24px;
+}
+
+.card-text a {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 24px;
+  color: #7289da;
+}
+
+.card-text a:hover {
+  border-bottom: 2px solid #7289da;
+}
