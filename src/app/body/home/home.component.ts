@@ -42,8 +42,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.typeWriter(this);
-    // this.fadeIn();
+    // this.typeWriter(this);
+    this.fadeIn();
   }
 
   flip() {
