@@ -110,12 +110,6 @@
   transform: rotateY(0deg);
 }
 
-.intro-title {
-  margin-top: 0;
-  text-align: center;
-}
-
-.intro,
 .content {
   text-align: justify;
 }
@@ -128,6 +122,104 @@
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.intro-title {
+  position: relative;
+  padding-bottom: 3em;
+  width: 17rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.title-1,
+.title-2,
+.title-3 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  position: absolute;
+  margin: 0 -4.2rem 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.title-1 {
+  animation-name: anim-1;
+}
+
+.title-2 {
+  animation-name: anim-2;
+}
+
+.title-3 {
+  animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+
+  0%,
+  8.3% {
+    left: -100%;
+    opacity: 0;
+  }
+
+  8.3%,
+  25% {
+    left: 25%;
+    opacity: 1;
+  }
+
+  33.33%,
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}
+
+@keyframes anim-2 {
+
+  0%,
+  33.33% {
+    left: -100%;
+    opacity: 0;
+  }
+
+  41.63%,
+  58.29% {
+    left: 25%;
+    opacity: 1;
+  }
+
+  66.66%,
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}
+
+@keyframes anim-3 {
+
+  0%,
+  66.66% {
+    left: -100%;
+    opacity: 0;
+  }
+
+  74.96%,
+  91.62% {
+    left: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
 }
 
 #about {
@@ -160,6 +252,10 @@ main h1::after {
   .home-title h1 {
     font-size: 2.5rem;
     font-size: 9vw;
+  }
+
+  .intro-title-container {
+    width: 100%;
   }
 }
 
