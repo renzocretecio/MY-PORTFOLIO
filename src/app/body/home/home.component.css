@@ -126,23 +126,30 @@
 
 .intro-title {
   position: relative;
-  padding-bottom: 3em;
-  width: 17rem;
+  width: 28rem;
   margin: 0 auto;
-  overflow: hidden;
+  height: 2em;
 }
 
-.title-1,
-.title-2,
-.title-3 {
+#title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28rem;
+  margin-left: -14rem;
+  margin-top: -2em;
+}
+
+#title p {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 1em;
+
   position: absolute;
-  margin: 0 0 0 -4.2rem;
+  left: 0;
   width: 100%;
-  text-align: center;
-  display: block;
+  margin-top: 0;
+
   animation-duration: 10s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -164,19 +171,19 @@
 
   0%,
   8.3% {
-    left: -100%;
+    /* left: -100%; */
     opacity: 0;
   }
 
   8.3%,
   25% {
-    left: 25%;
+    /* left: 25%; */
     opacity: 1;
   }
 
   33.33%,
   100% {
-    left: 110%;
+    /* left: 110%; */
     opacity: 0;
   }
 }
@@ -185,19 +192,19 @@
 
   0%,
   33.33% {
-    left: -100%;
+    /* left: -100%; */
     opacity: 0;
   }
 
   41.63%,
   58.29% {
-    left: 25%;
+    /* left: 25%; */
     opacity: 1;
   }
 
   66.66%,
   100% {
-    left: 110%;
+    /* left: 110%; */
     opacity: 0;
   }
 }
@@ -206,18 +213,18 @@
 
   0%,
   66.66% {
-    left: -100%;
+    /* left: -100%; */
     opacity: 0;
   }
 
   74.96%,
   91.62% {
-    left: 25%;
+    /* left: 25%; */
     opacity: 1;
   }
 
   100% {
-    left: 110%;
+    /* left: 110%; */
     opacity: 0;
   }
 }
@@ -258,11 +265,6 @@ main h1::after {
     width: 100%;
   }
 
-  .title-1,
-  .title-2,
-  .title-3 {
-    margin: 0 0 0 -5rem;
-  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
