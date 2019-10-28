@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 // declare const $: any;
 import * as $ from 'jquery';
 import { IfStmt } from '@angular/compiler';
+import { WINDOW } from '@ng-toolkit/universal';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -23,9 +24,9 @@ export class HomeComponent implements OnInit {
 
   fadeIn() {
     $(window).scroll(function () {
-      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      var window = $(this).scrollTop() + $(this).innerHeight();
       var objectBottom = $("#about").offset().top + $("#about").outerHeight();
-      if (windowBottom > 1000) {
+      if (window > 1000) {
         if ($("#about").css("opacity") == 0) { $("#about").fadeTo('slow', 1); }
       }
       // else {
@@ -36,7 +37,7 @@ export class HomeComponent implements OnInit {
 
   img = ["../../assets/img/Logo2.jpg",
     "../../assets/img/Mev2.jpg"];
-  constructor() {
+  constructor(@Inject(WINDOW) private window: Window, ) {
 
 
   }

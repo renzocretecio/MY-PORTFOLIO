@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import * as $ from 'jquery';
+import { WINDOW } from '@ng-toolkit/universal';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -7,21 +8,13 @@ import * as $ from 'jquery';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(WINDOW) private window: Window, ) { }
 
   ngOnInit() {
   }
 
   goTop() {
-    // let scrollTop = window.setInterval(() => {
-    //   let pos = window.pageYOffset;
-    //   if (pos > 0) {
-    //     window.scrollTo({ top: 0, behavior: 'smooth' });
-    //   } else {
-    //     window.clearInterval(scrollTop);
-    //   }
-    // }, 16);
-    window.scroll(0, 0);
+    this.window.scroll(0, 0);
   }
 
 }

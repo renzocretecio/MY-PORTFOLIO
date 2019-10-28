@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
-
+import { Component, Inject } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
+import { WINDOW } from '@ng-toolkit/universal';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+ constructor(@Inject(WINDOW) private window: Window) {}
+
   top(event) {
-    window.scroll(0, 0);
+    this.window.scroll(0, 0);
   }
 }

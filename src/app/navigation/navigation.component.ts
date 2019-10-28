@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import * as $ from 'jquery';
+import { WINDOW } from '@ng-toolkit/universal';
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
@@ -8,7 +9,7 @@ import * as $ from 'jquery';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor(private titleService: Title ) { }
+  constructor(@Inject(WINDOW) private window: Window, private titleService: Title ) { }
 
   ngOnInit() {
   }
@@ -30,7 +31,7 @@ export class NavigationComponent implements OnInit {
     //   }
     // }, 16);
     this.titleService.setTitle( newTitle );
-    window.scroll(0, 0);
+    this.window.scroll(0, 0);
   }
   // ({ top: 0, behavior: 'smooth' })
 }
