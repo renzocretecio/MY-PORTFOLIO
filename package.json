@@ -16,7 +16,7 @@
     "build:prod": "npm run build:ssr",
     "serve:prerender": "node static.js",
     "build:prerender": "npm run build:prod && node dist/prerender.js",
-    "deploy": "gh-pages -d build dist"
+    "deploy": "gh-pages -d dist"
   },
   "homepage": "https://creteciorenzo.github.io/MY-PORTFOLIO",
   "private": true,
@@ -40,6 +40,7 @@
     "bootstrap": "^4.3.1",
     "domino": "^2.1.3",
     "express": "^4.15.2",
+    "gh-pages": "^2.2.0",
     "jquery": "^3.4.1",
     "ngx-slick-carousel": "^0.4.6",
     "owl.carousel": "^2.3.4",
