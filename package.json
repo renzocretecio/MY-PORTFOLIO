@@ -15,7 +15,10 @@
     "server": "node local.js",
     "build:prod": "npm run build:ssr",
     "serve:prerender": "node static.js",
+  },build:prerender": "npm run build:prod && node dist/prerender.js",
+    "deploy": "ng build --prod && gh-pages -d dist/MY-PORTFOLIO-V2"
   },
+  "homepage": "https://creteciorenzo.github.io/MY-PORTFOLIO",
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.1.1",
