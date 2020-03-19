@@ -1,0 +1,21 @@
+main h1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 16rem;
+  height: 4px;
+  margin-left: -8rem;
+  background-color: #525e65;
+}
+
+.home-about {
+  width: 28rem;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  transition: all 1s;
+}

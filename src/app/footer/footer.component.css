@@ -40,11 +40,11 @@
   font-family: "Nunito", sans-serif;
   text-decoration: none;
   cursor: pointer;
-  color: #7289da;
+  color: #ff2047
 }
 
 #footer .email a:hover {
-  border-bottom: 2px solid #7289da;
+  border-bottom: 2px solid #ff2047;
 }
 
 #footer .links {

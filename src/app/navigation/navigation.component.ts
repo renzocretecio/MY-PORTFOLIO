@@ -2,15 +2,17 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import * as $ from 'jquery';
 import { WINDOW } from '@ng-toolkit/universal';
+import { ActivatedRoute } from '@angular/router';
+import { slideInAnimation } from '../route-animation';
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.css']
+  styleUrls: ['./navigation.component.css'],
+  animations: [slideInAnimation]
 })
 export class NavigationComponent implements OnInit {
 
-  constructor(@Inject(WINDOW) private window: Window, private titleService: Title ) { }
-
+  constructor(@Inject(WINDOW) private window: Window, private titleService: Title) { }
   ngOnInit() {
   }
 
@@ -30,7 +32,7 @@ export class NavigationComponent implements OnInit {
     //     window.clearInterval(scrollTop);
     //   }
     // }, 16);
-    this.titleService.setTitle( newTitle );
+    this.titleService.setTitle(newTitle);
     this.window.scroll(0, 0);
   }
   // ({ top: 0, behavior: 'smooth' })

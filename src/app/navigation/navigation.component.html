@@ -1,20 +1,26 @@
 <nav id="category" class="fixed-header" role="navigation">
+
+  <div class="logo">
+    <h1 class="circle">R<span>C</span></h1>
+  </div>
+
   <ul class="menu-primary">
     <li id="menu-item-1" class="menu-item">
-      <a title="home" class="nav-item" [routerLink]="['']" [routerLinkActive]="['active']"
-        [routerLinkActiveOptions]="{exact: true}" (click)="goTop('Renzo R. Cretecio | Web Developer')">Home</a>
-    </li>
-    <li id=" menu-item-2" class="menu-item">
-      <a title="about" class="nav-item" [routerLink]="['/resume']" [routerLinkActive]="['active']"
-        (click)="goTop('Renzo R. Cretecioo | Resume')">Resume</a>
+      <a title="home" class="nav-item" [routerLink]="['']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:
+        true}" (click)="goTop('Renzo R. Cretecio | Web Developer')">Home</a>
     </li>
     <li id="menu-item-3" class="menu-item">
+      <a title="resume" class="nav-item" [routerLink]="['/resume']" [routerLinkActive]="['active']"
+        (click)="goTop('Renzo R. Cretecio | Resume')">Resume</a>
+    </li>
+    <li id="menu-item-4" class="menu-item">
       <a title="projects" class="nav-item" [routerLink]="['/projects']" [routerLinkActive]="['active']"
         (click)="goTop('Renzo R. Cretecio | Projects')">Projects</a>
     </li>
   </ul>
 </nav>
-<router-outlet></router-outlet>
-<footer>
-  <app-footer></app-footer>
-</footer>
+
+<div [@routeAnimations]="o && o.activatedRouteData 
+      && o.activatedRouteData['animation']">
+  <router-outlet #o="outlet"></router-outlet>
+</div>
