@@ -13,12 +13,8 @@
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod && ng run MY-PORTFOLIO-V2:server:production",
     "server": "node local.js",
-    "build:prod": "npm run build:ssr",
-    "serve:prerender": "node static.js",
-  "build:prerender": "npm run build:prod && node dist/prerender.js",
-    "deploy": "ng build --prod && gh-pages -d dist/MY-PORTFOLIO-V2"
+    "build:prod": "npm run build:ssr"
   },
-  "homepage": "https://creteciorenzo.github.io/MY-PORTFOLIO",
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.1.1",
