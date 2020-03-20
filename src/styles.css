@@ -18,6 +18,7 @@ body {
   margin: 0;
   width: 100%;
   min-width: 20rem;
+  padding: 0;
 }
 
 .portfolio-container {
@@ -44,9 +45,9 @@ body {
   list-style-type: disc;
 }
 
-.container {
+.body-container {
   width: 100%;
-  /* padding: 0 1rem; */
+  padding: 0 1rem;
 
 }
 
