@@ -14,6 +14,8 @@ export class NavigationComponent implements OnInit {
 
   constructor(@Inject(WINDOW) private window: Window, private titleService: Title) { }
   ngOnInit() {
+    this.hamburger()
+    this.buttonItem()
   }
 
   navActive() {
@@ -36,4 +38,26 @@ export class NavigationComponent implements OnInit {
     this.window.scroll(0, 0);
   }
   // ({ top: 0, behavior: 'smooth' })
+
+  hamburger() {
+    $('.hamburger').click(() => {
+      if ($('.fixed-header ul').hasClass('nav-active')) {
+        $('.fixed-header ul').removeClass('nav-active')
+        $('.fixed-header ul').addClass('menu-primary')
+      } else {
+        $('.fixed-header ul').addClass('nav-active')
+        $('.fixed-header ul').removeClass('menu-primary')
+      }
+      // $('.fixed-header ul').toggleClass('nav-active')
+    })
+  }
+
+  buttonItem() {
+    $('.fixed-header li').click(() => {
+      if ($('.fixed-header ul').hasClass('nav-active')) {
+        $('.fixed-header ul').removeClass('nav-active')
+        $('.fixed-header ul').addClass('menu-primary')
+      }
+    })
+  }
 }
