@@ -216,7 +216,7 @@
 
   .home-intro {
     position: relative;
-    max-width: 100%;
+    width: 100%;
   }
 
   .home-title h1 {
