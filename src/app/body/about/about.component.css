@@ -23,5 +23,6 @@ main h1::after {
 @media only screen and (max-width: 480px) {
   .home-about {
     width: 100%;
+    position: relative;
   }
 }
